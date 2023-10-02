@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  counter-service:
+    build:
+      context: ./DivisorCounter
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80" # This line exposes the service on port 8000 on your host machine.
+    depends_on:
+      - cache-db
+    restart: on-failure
+  
+  cache-service:
+    build:
+      context: ./CacheService
+      dockerfile: Dockerfile
+    ports:
+      - "8001:80" # This line exposes the service on port 8001 on your host machine.
+    depends_on:
+      - cache-db
+    restart: on-failure
+  
+  cache-db:
+    image: "mysql:latest"
+    environment:
+      MYSQL_DATABASE: "cache-database"
+      MYSQL_USER: "div-cache"
+      MYSQL_PASSWORD: "C@ch3d1v"
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+    ports:
+      - "3306:3306" # This line exposes MySQL on port 3306 on your host machine.
+    restart: on-failure

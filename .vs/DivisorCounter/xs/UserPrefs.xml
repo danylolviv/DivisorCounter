@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{E271A38A-5617-41EE-AB37-5CD854975B64}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DivisorCounter/CacheApiClient.cs">
+    <Files>
+      <File FileName="DivisorCounter/Program.cs" Line="9" Column="38" />
+      <File FileName="DivisorCounter/CacheApiClient.cs" Line="10" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DivisorCounter" expanded="True">
+            <Node name="CacheService" expanded="True" />
+            <Node name="DivisorCounter" expanded="True">
+              <Node name="CacheApiClient.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.DivisorCounter PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
